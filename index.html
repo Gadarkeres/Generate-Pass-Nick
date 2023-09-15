@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Nicks e Senhas</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="nick.js" defer></script>
+  
+</head>
+<body>
+  <div class="container-nicks">
+    <h1>Gerador de nicks</h1>
+    <p>selecione "gerar nick" nick para gerar um nick aleatório <br> e copie no icone ao lado!</p>
+    <input id="nick-gerado" type="text" placeholder="Seu nick aqui.">
+    <img class="icon" id="Copiar" src="icons8-copy-50.png" alt="Copiar Nick">
+    <div class="buttons">
+        <button id="gerar-nick">Gerar nick</button>
+        <button id="trocar-modo">Trocar para gerador de senha</button>
+    </div>   
+   
+  </div>
+
+  <div class="container-senha" >
+    <h1>Gerador de senha</h1>
+    
+        <div class="senha">
+           <p>Defina o tamanho da senha e clique em <br> "gerar senha"  para gerar uma senha aleatória.</p>
+            <input type="number" name="tamanho-senha" id="tamanho-senha" max="13" min="4"  value="8">
+            <input id="senha-gerada" type="text" placeholder="Sua senha aqui.">
+            <img src="icons8-copy-50.png" id="copiar-senha" alt="Copiar senha">
+        </div>
+        <div class="buttons">
+      
+        <button id="gerar-senha">Gerar senha</button>
+        <button id="trocar-modo-pass">Trocar para gerador de nicks</button></div>
+  </div>
+  
+</body>
+</html>

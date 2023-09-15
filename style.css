@@ -1,0 +1,174 @@
+body{
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+.container-senha{
+    display: none;
+}
+.container-nicks{
+    position: relative;
+    display: flex, block;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #ffff;
+    padding: 75px;
+    border: 1px solid #2f323a8e;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.706);
+    transition: all 0.5s;
+}
+.container-nicks:hover{
+    transform: translateY(-5px);
+}
+.container-nicks h1{
+margin-left: 50px;
+}
+p{
+    text-align: center;
+    color: #7D84B2;
+}
+h1{
+    color: #2F323A;
+    text-transform: capitalize;
+}
+
+#nick-gerado{
+    width: 200px;
+    margin: 10px 0px 20px 90px;
+    border: none;
+    border-bottom: 1px solid #2F323A;
+    color: #2F323A;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    
+}
+#nick-gerado:focus{
+    outline: none;
+}
+.icon{
+    position: absolute;
+    right: 140px;
+    top: 225px;
+    cursor: pointer;
+    transition: all 0.5s;
+    height: 1.6em;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.buttons button{
+    font-weight: bold;
+    border: 2px solid #7D84B2;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #2F323A;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.buttons button:hover{
+    background-color: #7D84B2;
+    color: #fff;
+}
+
+/* container password */ 
+.container-senha{
+    text-align: center;
+    position: relative;
+    display: flex, none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #ffff;
+    padding: 75px;
+    border: 1px solid #2F323A;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.706);
+    transition: all 0.5s;
+}
+
+.container-senha:hover{
+    transform: translateY(-5px);
+}
+.senha{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    align-items: center;
+}
+#tamanho-senha{
+    width: 50px;
+    margin: 0px 20px;
+    color: #2F323A;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#senha-gerada{
+    width: 200px;
+    margin: 20px 0px;
+    border: none;
+    border-bottom: 1px solid #2F323A;
+    color: #2F323A;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+}
+#senha-gerada:focus{
+    outline: none;
+}
+.senha img{
+    position: absolute;
+    right: 130px;
+    top: 270px;
+    cursor: pointer;
+    height: 1.6em;
+}
+.hidden{
+    visibility: hidden;
+}
+.container-senha button{
+    border: 2px solid #F75C03 ;
+}
+.container-senha button:hover{
+    background-color: #F75C03;
+}
+.container-senha p{
+    color:#F75C03
+}
+@media screen and (max-width:750px){
+    .container-nicks, .container-senha{
+        padding: 30px;
+        margin-top: 100px;
+    }
+    .icon{
+        position: absolute;
+        right: 80px;
+        top: 185px;
+        cursor: pointer;
+        transition: all 0.5s;
+        height: 1.6em;
+    }
+    .senha img{
+        position: absolute;
+        right: 80px;
+        top: 235px;
+        cursor: pointer;
+        height: 1.6em;
+    }
+
+}
